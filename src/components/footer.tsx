@@ -24,7 +24,7 @@ function Footer() {
 
       <div className='flex justify-between items-start p-5 flex-wrap'>
         <div className='flex flex-col m-1'>
-          <p className='text-xs mt-10' style={{ width: '300px' }}>Ziro is a Freelance Landing Website lorem ipsum dolor sit amet, consectetur adipiscin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+          <p className='text-xs mt-10' style={{ width: '300px' }}>Our platform offers an all-encompassing recruitment solution specifically designed for the hospitality industry, making the hiring process more efficient. By harnessing advanced AI technology, we ensure smooth management of applicant tracking, provide personalized job suggestions</p>
           <div className='flex'>
             <Image src={fb} alt='fb' width={50} height={20} className='cursor-pointer hover:bg-light-purple rounded-xl' />
             <Image src={tt} alt='fb' width={50} height={20} className='cursor-pointer hover:bg-light-purple rounded-xl' />
@@ -34,8 +34,8 @@ function Footer() {
           </div>
         </div>
         <div className='flex flex-col justify-between m-1'>
-          <p className='mb-2 text-md font-semibold'>ZIRO</p>
-          <p className='my-2 text-xs cursor-pointer'>Why Ziro</p>
+          <p className='mb-2 text-md font-semibold'>HiredInn</p>
+          <p className='my-2 text-xs cursor-pointer'>Why HiredInn</p>
           <p className='my-2 text-xs cursor-pointer'>Enterprise</p>
           <p className='my-2 text-xs cursor-pointer'>Customer Story</p>
           <p className='my-2 text-xs cursor-pointer'>Security</p>
@@ -77,7 +77,7 @@ function Footer() {
       </div>
 
       <div className='flex justify-between items-center border-t-2 border-slate-200 p-5 flex-wrap'>
-        <p>Ziro - © 2024 All Rights Reserved</p>
+        <p>HiredInn - © 2024 All Rights Reserved</p>
         <p>Made with ❤️ by HiredInn</p>
       </div>
     </div>
