@@ -9,7 +9,7 @@ import TryFree from "@/components/tryFree";
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <Banner />
       <Choose />
       <Howitworks />

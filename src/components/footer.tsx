@@ -11,7 +11,7 @@ import email from '../img/email.svg';
 
 function Footer() {
   return (
-    <div className='bg-[#180036] flex flex-wrap flex-col justify-between w-full px-20 py-10 text-white'>
+    <div className='bg-[#180036] flex flex-wrap flex-col justify-between w-full sm:px-20 py-10 text-white'>
       <div className='flex justify-between items-center p-5 flex-wrap'>
         <p className='text-white'>Dont miss out on the latest updates and news!</p>
         <div className='flex border-2 border-slate-400 rounded-3xl p-1 justify-between'>
@@ -24,7 +24,7 @@ function Footer() {
 
       <div className='flex justify-between items-start p-5 flex-wrap'>
         <div className='flex flex-col m-1'>
-          <p className='text-xs mt-10' style={{ width: '300px' }}>Our platform offers an all-encompassing recruitment solution specifically designed for the hospitality industry, making the hiring process more efficient. By harnessing advanced AI technology, we ensure smooth management of applicant tracking, provide personalized job suggestions</p>
+          <p className='text-xs sm:mt-10' style={{ width: '300px' }}>Our platform offers an all-encompassing recruitment solution specifically designed for the hospitality industry, making the hiring process more efficient. By harnessing advanced AI technology, we ensure smooth management of applicant tracking, provide personalized job suggestions.</p>
           <div className='flex'>
             <Image src={fb} alt='fb' width={50} height={20} className='cursor-pointer hover:bg-light-purple rounded-xl' />
             <Image src={tt} alt='fb' width={50} height={20} className='cursor-pointer hover:bg-light-purple rounded-xl' />

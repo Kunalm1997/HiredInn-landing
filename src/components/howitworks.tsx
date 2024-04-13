@@ -69,10 +69,8 @@ function Howitworks() {
       setScrollPosition(position);
     };
 
-    // Add event listener when component mounts
     window.addEventListener('scroll', handleScroll);
 
-    // Remove event listener when component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
