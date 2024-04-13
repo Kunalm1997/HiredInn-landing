@@ -40,7 +40,7 @@ function Banner() {
       <TypewriterEffectSmooth words={words} />
       <h2 className='md:text-xl text-[#717171]'>Introducing the first AI-powered hiring solution for <span className='text-dark-purple font-semibold transition-all'>{phrases[index]}</span></h2>
       <button className='flex items-center justify-between px-5 py-2 rounded-3xl lg:text-lg text-white mt-5 bg-dark-purple'>
-        Get Started
+        Book a Demo
       </button>
       <Image src={BannerImage} alt='banner_image' width={800} height={300} className='mt-20' />
     </div>

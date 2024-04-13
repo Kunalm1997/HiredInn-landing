@@ -63,22 +63,22 @@ function Footer() {
           <p className='mb-2 text-md font-semibold'>Get in touch with us</p>
           <div className='flex items-center'>
             <Image src={location} alt='location' width={15} height={20} />
-            <p className='my-2 text-xs ml-3'>832 Thompson Drive, San Fransisco CA 94107, <br />United States</p>
+            <p className='my-2 text-xs ml-3'>Balewadi High Street, Pune <br />India</p>
           </div>
           <div className='flex items-center'>
             <Image src={phone} alt='phone' width={15} height={20} />
-            <p className='my-2 text-xs ml-3'><a href="tel:+123 345123 556" className='text-white'>+123 345123 556</a></p>
+            <p className='my-2 text-xs ml-3'><a href="tel:+123 345123 556" className='text-white'>+91-8600504978</a></p>
           </div>
           <div className='flex items-center'>
             <Image src={email} alt='email' width={15} height={20} />
-            <p className='my-2 text-xs ml-3'><a href="mailto:support@ziro.id" className='text-white'>support@ziro.id</a></p>
+            <p className='my-2 text-xs ml-3'><a href="mailto:hello@hiredinn.co" className='text-white'>hello@hiredinn.co</a></p>
           </div>
         </div>
       </div>
 
       <div className='flex justify-between items-center border-t-2 border-slate-200 p-5 flex-wrap'>
         <p>Ziro - © 2024 All Rights Reserved</p>
-        <p>Made with ❤️ by ZIRO</p>
+        <p>Made with ❤️ by HiredInn</p>
       </div>
     </div>
   )
