@@ -1,5 +1,6 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import fb from '../img/Item → Link.svg';
 import tt from '../img/Item → Link (1).svg';
 import yt from '../img/Item → Link (2).svg';
@@ -8,14 +9,21 @@ import insta from '../img/Item → Link (4).svg';
 import location from '../img/location.svg';
 import phone from '../img/phone.svg';
 import email from '../img/email.svg';
+import DialogBox from './dialogBox';
 
 function Footer() {
+  const [dialogueOpen, dialogueClose] = useState(false);
+
+  const setOpen = () => {
+    dialogueClose(true);
+  }
+
   return (
     <div className='bg-[#180036] flex flex-wrap flex-col justify-between w-full sm:px-20 py-10 text-white'>
       <div className='flex justify-between items-center p-5 flex-wrap'>
         <p className='text-white'>Dont miss out on the latest updates and news!</p>
         <div className='flex border-2 border-slate-400 rounded-3xl p-1 justify-between'>
-          <input type="text" className='bg-transparent text-sm px-5' placeholder='Enter your email address here ..' />
+          <input type="text" className='bg-transparent text-sm px-5 outline-none' placeholder='Enter your email address here ..'  onChange={setOpen} />
           <button className='flex items-center justify-between px-5 py-2 rounded-3xl text-sm text-white bg-dark-purple'>
             Subscribe
           </button>
@@ -80,6 +88,8 @@ function Footer() {
         <p>HiredInn - © 2024 All Rights Reserved</p>
         <p>Made with ❤️ by HiredInn</p>
       </div>
+
+      {dialogueOpen && <DialogBox open={dialogueOpen} setOpen={dialogueClose} />}
     </div>
   )
 }

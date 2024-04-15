@@ -5,9 +5,15 @@ import React, { useState } from 'react'
 import logo from '../img/HiredInn.svg';
 import bookdemovector from '../img/Vector.svg';
 import Link from 'next/link';
+import DialogBox from './dialogBox';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dialogueOpen, dialogueClose] = useState(false);
+
+  const setOpen = () => {
+    dialogueClose(true);
+  }
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -52,10 +58,10 @@ function Navbar() {
                 Book a demo
               </button>
             </Link>
-            <button className="flex items-center justify-between px-5 py-2 m-1 rounded-3xl text-sm bg-light-purple">
+            <button className="flex items-center justify-between  px-5 py-2 m-1 rounded-3xl text-sm bg-light-purple" onClick={setOpen}>
               Find Jobs
             </button>
-            <button className="flex items-center justify-between px-5 py-2 m-1 rounded-3xl text-sm text-white bg-dark-purple">
+            <button className="flex items-center justify-between px-5 py-2 m-1 rounded-3xl text-sm text-white bg-dark-purple" onClick={setOpen}>
               Hire Talent
             </button>
           </div>
@@ -79,14 +85,15 @@ function Navbar() {
               Book a demo
             </button>
           </Link>
-          <button className="flex items-center justify-between px-5 py-2 rounded-3xl text-sm bg-light-purple">
+          <button className="flex items-center justify-between px-5 py-2 rounded-3xl text-sm bg-light-purple font-medium" onClick={setOpen}>
             Find Jobs
           </button>
-          <button className="flex items-center justify-between px-5 py-2 rounded-3xl text-sm text-white bg-dark-purple">
+          <button className="flex items-center justify-between px-5 py-2 rounded-3xl text-sm text-white bg-dark-purple" onClick={setOpen}>
             Hire Talent
           </button>
         </div>
       </div>
+      {dialogueOpen && <DialogBox open={dialogueOpen} setOpen={dialogueClose} />}
     </div>
 
     // <div className="flex justify-between items-center px-10 py-4 bg-white rounded-xl my-2 mx-4">
