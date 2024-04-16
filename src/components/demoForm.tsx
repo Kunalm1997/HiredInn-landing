@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
 import laptopBanner from '../img/222.svg';
+import DemoDialogBox from './demoDialogBox';
 
 function DemoForm() {
   const [name, setName] = useState('');
@@ -9,6 +10,11 @@ function DemoForm() {
   const [number, setNumber] = useState('');
   const [companyName, setCompanyName] = useState('');
   const [link, setLink] = useState('');
+  const [dialogueOpen, dialogueClose] = useState(false);
+
+  const setOpen = () => {
+    dialogueClose(true);
+  }
 
   const handleBookDemoClick = async () => {
     const data = { name, email, number, companyName, link };
@@ -20,7 +26,8 @@ function DemoForm() {
       .then((res) => res.json())
       .then((data) => {
         if (data.data && data.data.id) {
-          alert(`Thank you for your interest ${name}! We will get back to you soon!`);
+          // alert(`Thank you for your interest ${name}! We will get back to you soon!`);
+          setOpen();
           setName("");
           setEmail("");
           setNumber("");
@@ -72,7 +79,7 @@ function DemoForm() {
           Book a Demo
         </button>
       </div>
-
+      {dialogueOpen && <DemoDialogBox open={dialogueOpen} setOpen={dialogueClose} />}
       </div>
   )
 }

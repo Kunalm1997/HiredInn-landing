@@ -1,6 +1,7 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image';
 
 
 interface DialogBoxProps {
@@ -8,7 +9,7 @@ interface DialogBoxProps {
   setOpen: (open: boolean) => void;
 }
 
-const DialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
+const DemoDialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
   const cancelButtonRef = useRef(null);
 
   return (
@@ -42,18 +43,18 @@ const DialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
                   <div className="sm:flex items-center">
                     <div className="mt-3 text-center sm:mt-0">
                       <h1 className="font-semibold text-5xl text-gray-900 bg-gradient-to-br from-purple-400 to-purple-800 inline-block text-transparent bg-clip-text">
-                        Join the Waitlist
+                        Thank You
                       </h1>
                       <div className="mt-5">
-                        <p className="text-sm text-gray-800 font-medium">
-                          Join our waitlist today and be one of the first to experience the future of hospitality hiring with our cutting-edge AI platform! Sign up now to revolutionize your hiring process and find the perfect match for your team. 
+                        <p className="text-sm font-semibold text-gray-800">
+                          Your demo has been submitted.<br /> We will get back to you as soon as possible!
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className='text-sm'>
-                  <input type="text" placeholder='enter your email' style={{outline: 'none', borderRadius: '5px', border: '1px solid purple', padding: '10px 25px', width: '30vw'}} />
+                <div>
+                  <Image src="https://ik.imagekit.io/7guc79cmq/Premium%20Vector%20_%20Thank%20you%20message%20text%20vector%20illustration%20or%20thumb%20up%20hand%20icon%20with%20handwritten%20text.jpeg?updatedAt=1713248503738" alt="thank you" width={400} height={400} />
                 </div>
                 <div className="bg-white py-3 flex flex-col sm:flex-row justify-center items-center">
                   <button
@@ -62,14 +63,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
                     onClick={() => setOpen(false)}
                     ref={cancelButtonRef}
                   >
-                    Cancel
-                  </button>
-                  <button
-                    type="button"
-                    className="inline-flex w-full rounded-md bg-dark-purple px-3 py-2.5 text-sm font-semibold text-white shadow-sm sm:ml-3 mt-2 sm:mt-0 sm:w-auto"
-                    onClick={() => setOpen(false)}
-                  >
-                    Submit
+                    Great!
                   </button>
                 </div>
               </Dialog.Panel>
@@ -81,4 +75,4 @@ const DialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
   )
 }
 
-export default DialogBox;
+export default DemoDialogBox;

@@ -18,7 +18,7 @@ function Howitworks() {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
-            src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://ik.imagekit.io/7guc79cmq/Quick.png?updatedAt=1713247529700"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -34,7 +34,7 @@ function Howitworks() {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
-            src="https://images.pexels.com/photos/671956/pexels-photo-671956.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://ik.imagekit.io/7guc79cmq/Give%20me%20a%20image%20for%20website%20where%20I%20want%20to%20describe%20Post%20a%20Job%20Specify%20the%20types%20osasaf%20position.png?updatedAt=1713246677405"
             width={300}
             height={300}
             className="h-full w-full object-cover"
@@ -50,7 +50,7 @@ function Howitworks() {
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <Image
-            src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800"
+            src="https://ik.imagekit.io/7guc79cmq/Designer-Photoroom.png?updatedAt=1713247439468"
             width={300}
             height={300}
             className="h-full w-full object-cover"
