@@ -44,7 +44,7 @@ function TryFree() {
         }
       >
         <Image
-          src={dashboardImage}
+          src='https://ik.imagekit.io/7guc79cmq/Screenshot%202024-04-16%20at%202.43.41%E2%80%AFPM.png?updatedAt=1713258894725'
           alt="hero"
           height={720}
           width={1400}

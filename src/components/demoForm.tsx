@@ -73,7 +73,7 @@ function DemoForm() {
       <div className='flex flex-col items-center justify-evenly w-1/2'>
         <h3 className='text-3xl font-semibold'>Book A Demo</h3>
         <h5 className='sm:text-xl font-normal text-center my-2 sm:my-5'>Streamline your hospitality hiring with our AI-driven platform <br /><span className='sm:text-lg'> Book a demo today and transform your recruitment process!</span></h5>
-        <Image src='https://ik.imagekit.io/7guc79cmq/Screenshot%202024-04-13%20at%205.28.48%E2%80%AFPM.png?updatedAt=1713010014162' alt='demo' width={900} height={500} className='my-5 sm:mt-0 rounded-lg' />
+        <Image src='https://ik.imagekit.io/7guc79cmq/Screenshot%202024-04-16%20at%202.43.41%E2%80%AFPM.png?updatedAt=1713258894725' alt='demo' width={900} height={500} className='my-5 sm:mt-0 rounded-lg' />
       </div>
       <div className='rounded-3xl flex flex-col items-center bg-light-purple sm:w-1/3' style={{padding: '50px', margin: '20px'}}>
         <div className='flex flex-col items-start justify-start m-3 text-black'>
