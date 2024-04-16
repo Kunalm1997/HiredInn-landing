@@ -31,7 +31,7 @@ function Choose() {
 
   return (
     <div className='bg-dark-purple rounded-2xl text-center flex flex-col items-center text-white border-t-2 py-20 leading-loose'>
-      <h3 className='text-3xl'>Why Choose Hired Inn</h3>
+      <h3 className='text-3xl'>Why choose Hired Inn ?</h3>
       <h6 className='text-sm sm:text-md leading-6 mt-3'>Choose hiredInn for its AI-driven precision in matching the perfect hospitality candidates to your business needs, <br/> ensuring efficiency and a high-quality workforce tailored to your requirements.</h6>
       <div className='flex flex-wrap justify-evenly items-center w-full mt-10'>
         {CardDetails.map((item, index) =>

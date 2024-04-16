@@ -14,7 +14,7 @@ export default function Home() {
       <Choose />
       <Howitworks />
       <TryFree />
-      <Partners />
+      {/* <Partners /> */}
       <Footer />
     </main>
   );
