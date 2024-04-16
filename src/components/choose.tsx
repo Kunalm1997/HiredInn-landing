@@ -32,7 +32,7 @@ function Choose() {
   return (
     <div className='bg-dark-purple rounded-2xl text-center flex flex-col items-center text-white border-t-2 py-20 leading-loose'>
       <h3 className='text-3xl'>Why Choose Hired Inn</h3>
-      <h5 className='text-lg mt-3'>Where to grow your business as a photographer site or social media?</h5>
+      <h6 className='text-sm sm:text-md leading-6 mt-3'>Choose hiredInn for its AI-driven precision in matching the perfect hospitality candidates to your business needs, <br/> ensuring efficiency and a high-quality workforce tailored to your requirements.</h6>
       <div className='flex flex-wrap justify-evenly items-center w-full mt-10'>
         {CardDetails.map((item, index) =>
           <div className='bg-white text-black rounded-2xl px-5 py-8 m-2 flex flex-col items-center' style={{ width: '300px', height: '250px', boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset' }} key={index}>
