@@ -33,7 +33,7 @@ function DemoForm() {
   function handleNumberChange(e: React.ChangeEvent<HTMLInputElement>) {
     const value = e.target.value;
     setNumber(value);
-    const phoneRegex = /^\d{13}$/;
+    const phoneRegex = /^\+?\d{10,12}$/;
     if (!phoneRegex.test(value)) {
       setNumberError("Please enter a valid phone number with country code.");
     } else {
