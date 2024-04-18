@@ -1,5 +1,7 @@
 import Banner from "@/components/banner";
 import Choose from "@/components/choose";
+import FAQAccordion from "@/components/faq/FAQAccordion";
+import FeaturesOne from "@/components/featureOne";
 import Footer from "@/components/footer";
 import Howitworks from "@/components/howitworks";
 import Navbar from "@/components/navbar";
@@ -11,9 +13,11 @@ export default function Home() {
     <main>
       {/* <Navbar /> */}
       <Banner />
-      <Choose />
-      <Howitworks />
+      {/* <Choose /> */}
+      <FeaturesOne />
+      {/* <Howitworks /> */}
       <TryFree />
+      <FAQAccordion />
       {/* <Partners /> */}
       <Footer />
     </main>
