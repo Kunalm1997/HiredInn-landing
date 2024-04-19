@@ -9,7 +9,7 @@ import { ContainerScroll } from './ui/container-scroll-animation';
 
 function TryFree() {
   return (
-    <div className='bg-white flex items-center justify-around'>
+    <div className='bg-white flex items-center justify-around' id='product'>
       {/* <div>
         <p className='text-3xl'>Try HiredInn free for <span className='text-dark-purple font-semibold'>14 days!</span></p>
         <p className='text-md'>A lifetime skips above whatever books software beams opposite the jest</p>

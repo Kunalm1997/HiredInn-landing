@@ -38,14 +38,14 @@ export default function FeaturesOne() {
   ]
 
 	return (
-    <section className="p-20 bg-dark-purple">
+    <section id="features" className="p-20 bg-dark-purple">
       <div className="flex flex-col items-center">
         <h2 className="text-white text-2xl sm:text-4xl text-center">Skip the Hassle, Find the Perfect People With HiredInn</h2>
         <div className="flex flex-col sm:flex-row items-center justify-evenly mt-10">
           {
             box.slice(0, 3).map((item, index) => {
               return (
-                <div className="bg-white w-full sm:w-1/3 flex flex-col items-start justify-evenly p-12 m-4 rounded-xl" key={index}>
+                <div className="bg-white w-[300px] sm:w-1/3 flex flex-col items-start justify-evenly p-12 m-4 rounded-xl" key={index}>
                   <div>
                     <Image src={item.icon} alt="icon" width={50} height={50} />
                   </div>
@@ -56,11 +56,11 @@ export default function FeaturesOne() {
             })
           }
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-evenly mt-10">
+        <div className="flex flex-col sm:flex-row items-center justify-evenly">
           {
             box.slice(3, 6).map((item, index) => {
               return (
-                <div className="bg-white w-full sm:w-1/3 flex flex-col items-start justify-evenly p-12 m-4 rounded-xl" key={index}>
+                <div className="bg-white w-[300px] sm:w-1/3 flex flex-col items-start justify-evenly p-12 m-4 rounded-xl" key={index}>
                   <div>
                     <Image src={item.icon} alt="icon" width={50} height={50} />
                   </div>

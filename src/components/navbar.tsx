@@ -44,12 +44,18 @@ function Navbar() {
       {menuOpen && (
         <div className="absolute top-full left-0 bg-white shadow-md rounded-md mt-2 md:hidden w-full p-5 z-10">
           <ul className='flex flex-col items-center'>
-            {/* <Link href="/aboutus"> */}
+            <Link href="/aboutus">
               <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer" onClick={toggleMenu}>About Us</li>
-            {/* </Link> */}
-            <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Features</li>
-            <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Product</li>
-            <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Contact</li>
+            </Link>
+            <a href='#features'>
+              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Features</li>
+            </a>
+            <a href='#product'>
+              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Product</li>
+            </a>
+            <a href='#footer'>
+              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Contact</li>
+            </a>
           </ul>
           <div className="flex flex-col justify-around items-center py-2">
             <Link href="/bookademo">
@@ -71,12 +77,18 @@ function Navbar() {
       {/* Regular Menu for Desktop */}
       <div className="hidden md:flex justify-between items-center w-full">
         <ul className='flex ml-20'>
-          {/* <Link href="/aboutus"> */}
+          <Link href="/aboutus">
             <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">About Us</li>
-          {/* </Link> */}
-          <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Features</li>
-          <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Product</li>
-          <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Contact</li>
+          </Link>
+          <a href="#features">
+            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Features</li>
+          </a>
+          <a href="#product">
+            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Product</li>
+          </a>
+          <a href="#footer">
+            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Contact</li>
+          </a>
         </ul>
         <div className='flex justify-around items-center' style={{ width: '30%' }}>
           <Link href="/bookademo">

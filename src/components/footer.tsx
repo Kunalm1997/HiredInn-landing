@@ -19,7 +19,7 @@ function Footer() {
   }
 
   return (
-    <div className='bg-[#180036] flex flex-wrap flex-col justify-between w-full sm:px-20 py-10 text-white'>
+    <div className='bg-[#180036] flex flex-wrap flex-col justify-between w-full sm:px-20 py-10 text-white' id='footer'>
       <div className='flex justify-around items-center p-5 flex-wrap'>
         <p className='text-white text-center'>Dont miss out on the latest updates and news!</p>
         <div className='flex border-2 border-slate-400 rounded-3xl p-1 justify-between mt-2 sm:mt-0'>
@@ -67,7 +67,7 @@ function Footer() {
           <p className='my-2 text-xs cursor-pointer'>Sign up</p>
           <p className='my-2 text-xs cursor-pointer'>FAQ</p>
         </div> */}
-        <div className='flex flex-col m-0'>
+        <div className='flex flex-col mr-6'>
           <p className='mb-2 text-md font-semibold'>Get in touch with us</p>
           <div className='flex items-center'>
             <Image src={location} alt='location' width={15} height={20} />
