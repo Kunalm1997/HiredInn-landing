@@ -112,7 +112,7 @@ function About() {
             <div className='flex flex-col mt-10'>
               {rules.map((item, index) => {
                 return (
-                  <div key={index} className='flex items-start w-[500px] my-3'>
+                  <div key={index} className='flex items-start xl:w-[500px] w-[300px] my-3'>
                     <Image src={tick} alt='tick' width={35} height={20} className='mr-2' />
                     <div className='flex flex-col items-start'>
                       <p className='text-xl xl:text-2xl font-semibold'>{item.heading}</p>
