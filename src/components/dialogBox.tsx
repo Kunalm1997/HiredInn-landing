@@ -53,9 +53,9 @@ const DialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
                   </div>
                 </div>
                 <div className='text-sm'>
-                  <input type="text" placeholder='enter your email' style={{outline: 'none', borderRadius: '5px', border: '1px solid purple', padding: '10px 25px', width: '30vw'}} />
+                  <input type="text" placeholder='enter your email' className='p-2 rounded-xl w-[250px] xl:w-[400px] border-2 border-dark-purple outline-none' />
                 </div>
-                <div className="bg-white py-3 flex flex-col sm:flex-row justify-center items-center">
+                <div className="bg-white py-3 flex justify-center items-center">
                   <button
                     type="button"
                     className="inline-flex w-full rounded-md bg-white px-3 py-2 text-sm font-semibold text-dark-purple shadow-sm sm:w-auto border-2 border-dark-purple"
@@ -66,7 +66,7 @@ const DialogBox: React.FC<DialogBoxProps> = ({ open, setOpen }) => {
                   </button>
                   <button
                     type="button"
-                    className="inline-flex w-full rounded-md bg-dark-purple px-3 py-2.5 text-sm font-semibold text-white shadow-sm sm:ml-3 mt-2 sm:mt-0 sm:w-auto"
+                    className="inline-flex w-full rounded-md bg-dark-purple px-3 py-2.5 text-sm font-semibold text-white shadow-sm ml-3 sm:w-auto"
                     onClick={() => setOpen(false)}
                   >
                     Submit

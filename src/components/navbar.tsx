@@ -6,10 +6,12 @@ import logo from '../img/HiredInn.svg';
 import bookdemovector from '../img/Vector.svg';
 import Link from 'next/link';
 import DialogBox from './dialogBox';
+import { useRouter } from 'next/navigation';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dialogueOpen, dialogueClose] = useState(false);
+  const router = useRouter();
 
   const setOpen = () => {
     dialogueClose(true);
@@ -18,6 +20,16 @@ function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const redirectMethod = (path: string) => {
+    if (window.location.pathname === '/aboutus') {
+      router.push('/');
+    }
+    setTimeout(() => {
+      router.push(path);
+      toggleMenu();
+    }, 1000);
+  }
 
   return (
 
@@ -48,13 +60,13 @@ function Navbar() {
               <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer" onClick={toggleMenu}>About Us</li>
             </Link>
             <a href='#features'>
-              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Features</li>
+              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer" onClick={()=>redirectMethod('#features')}>Features</li>
             </a>
             <a href='#product'>
-              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Product</li>
+              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer" onClick={()=>redirectMethod('#product')}>Product</li>
             </a>
             <a href='#footer'>
-              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer">Contact</li>
+              <li className="m-1 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer" onClick={()=>redirectMethod('#footer')}>Contact</li>
             </a>
           </ul>
           <div className="flex flex-col justify-around items-center py-2">
@@ -81,13 +93,13 @@ function Navbar() {
             <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">About Us</li>
           </Link>
           <a href="#features">
-            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Features</li>
+            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold" onClick={()=>redirectMethod('#features')}>Features</li>
           </a>
           <a href="#product">
-            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Product</li>
+            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold" onClick={()=>redirectMethod('#product')}>Product</li>
           </a>
           <a href="#footer">
-            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold">Contact</li>
+            <li className="mx-4 active:border-b-2 hover:border-b-2 hover:border-dark-purple cursor-pointer font-semibold" onClick={()=>redirectMethod('#footer')}>Contact</li>
           </a>
         </ul>
         <div className='flex justify-around items-center' style={{ width: '30%' }}>
