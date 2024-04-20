@@ -49,7 +49,7 @@ function About() {
 
   return (
     <>
-      <div className=' flex flex-col justify-around h-screen'>
+      <div className=' flex flex-col justify-around'>
         <div className='p-10 xl:p-20 flex flex-col xl:flex-row justify-evenly items-center'>
           <div className='flex flex-col w-full xl:w-1/2'>
             <div className='flex flex-col'>
@@ -77,7 +77,7 @@ function About() {
             </div>
           </div>
         </div>
-        {/* <div className='flex flex-col mt-[100px]'>
+        <div className='flex flex-col mt-[100px]'>
           <p className='text-2xl text-dark-purple font-medium text-center'>Why We Are Best ?</p>
           <p className='text-4xl font-medium text-center mt-10'>A WIN WIN FOR ALL</p>
           <div className='flex flex-col xl:flex-row mt-10 items-center justify-around'>
@@ -104,7 +104,7 @@ function About() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <div className='flex flex-col xl:flex-row py-[100px] xl:w-full items-center justify-evenly'>
           <div className='flex flex-col xl:items-start items-center justify-between'>
             <p className='text-lg text-dark-purple uppercase font-medium'>A LONG VISION</p>
